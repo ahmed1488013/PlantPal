@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="search" placeholder="Search plants..." onkeyup="searchPlants()" class="search-bar">
+        <div id="plantList" class="plant-list"></div>
+    </div>
+
+    <!-- Modal for Care Instructions -->
+    <div id="careModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="careInstructions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
